@@ -1,13 +1,11 @@
 import React from "react";
-import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
     <>
       <nav className=" d-flex justify-content-around mx-4  ">
         <div>
-          
-          <img src={logo} alt="" className="py-2" />
+          <img src="/logo.png" alt="Logo" />
         </div>
         <div className="px-5">
           <ol className="list-unstyled d-flex  p-2 navlist">

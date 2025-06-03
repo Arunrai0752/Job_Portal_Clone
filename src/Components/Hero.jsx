@@ -1,12 +1,11 @@
 import React from "react";
-import bgimg from "../assets/h1_hero.jpg";
 
 const Hero = () => {
   return (
     <>
       <main>
         <div>
-          <img src={bgimg} alt="" />
+          <img src="/h1_hero.jpg" alt="Hero Background" />
 
           <div className="maintext ps-40 pe-170 ">
             <p className="text-8xl font-bold text-[#3d3d52]">
