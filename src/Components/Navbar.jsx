@@ -1,29 +1,33 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
-      <nav className=" d-flex justify-content-around mx-4  ">
+      <nav className=" flex justify-around align-content-center  m-2  ">
         <div>
-          <img src="/logo.png" alt="Logo" />
+          <img src="/logo.png" className="" alt="Logo" />
         </div>
-        <div className="px-5">
-          <ol className="list-unstyled d-flex  p-2 navlist">
-            <li>Homes</li>
-            <li>Finds a Jobs</li>
-            <li> Abouts </li>
-            <li>Pages</li>
-            <li>Contacts</li>
+        <div className="list mx-[120px] flex items-center">
+          <ol className="list-unstyled  flex gap-10">
+            <NavLink>Homes</NavLink>
+            <NavLink>Finds a Jobs </NavLink>
+            <NavLink>About</NavLink>
+            <NavLink>Page</NavLink>
+            <NavLink>Contact</NavLink>
+           
           </ol>
         </div>
-        <div className="buttons d-flex">
+        <div className=" flex gap-3 items-center">
           <div>
-            {" "}
-            <button className="Register_Button py-3 px-5 text-white">Register</button>
+            <button className=" bg-pink-700 py-4 px-12 text-white">
+              Register
+            </button>
           </div>
           <div>
-            {" "}
-            <button className="Login_button py-3 px-5">Login</button>
+            <button className=" border-1 py-4 px-12 text-pink-700 hover:bg-pink-700 hover:text-white ">
+              Login
+            </button>
           </div>
         </div>
       </nav>
