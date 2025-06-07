@@ -12,17 +12,17 @@ const Login = () => {
 
           <div className="relative top-[60px]   items-center ">
             <div className=" h-[80px] relative p-5  flex  justify-around items-center  text-black rounded-b-2xl ">
-              <span className=" text-[25px] float-start ">Email : </span>
+              <span className=" text-[25px] float-start ">Username : </span>
               <input
                 type="email"
                 id="email"
                 className="bg-white w-[400px] h-[60px] p-5 rounded-2xl text-2xl float-end outline-none"
-                placeholder="Enter Your Email"
+                placeholder="Enter Your Email/Username"
               />
             </div>
 
             <div className=" h-[80px] relative p-5 w-550px flex  justify-around items-center  text-black rounded-b-2xl  ">
-              <span className=" text-[20px] float-start ">Password : </span>
+              <span className=" text-[25px] float-start ">Password : </span>
               <input
                 type="password"
                 id="name"
