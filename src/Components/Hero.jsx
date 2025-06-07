@@ -13,7 +13,7 @@ const Hero = () => {
     <>
       <main>
         <section>
-          <div className="bg-[url('h1_hero.jpg')] h-[830px] w-[100%]  items-center ">
+          <div className="bg-[url('h1_hero.jpg')] h-[830px] w-[100%]  bg-no-repeat object-fill bg-cover items-center ">
             <div className="h-screen mx-auto  flex items-center relative bottom-[150px] pl-[200px]   ">
               <h1 className="text-8xl font-extrabold text-gray-700 ">
                 Find the <br /> most exciting <br />
@@ -129,6 +129,35 @@ const Hero = () => {
 
             <button className="border-1 py-[25px] px-[80px] rounded-2xl border-blue-500 text-blue-500 text-2xl "> Browse All Sectors </button>
           </div>
+        </section>
+
+
+
+
+        <section>
+
+
+          <div className=" bg-[url('cv_bg.jpg')] bg-no-repeat object-fill bg-cover bg-center w-full h-[500px] mb-[500px]">
+
+            <div className=" bg-blue-800 bject-fill opacity-70 bg-center w-full h-[500px] mb-[500px] grid  text-white flex justify-content-center  items-center text-center ">
+
+
+              <div>
+                
+                              <span className="text-1xl">FEATURED TOURS PACKAGES</span>
+                              <br /> <br />
+                              <h1 className="text-5xl font-bold"> Make a Difference with Your <br /> Online Resume! </h1>
+                              <br /> <br /> <br />
+                              <button className=" py-4 px-15  rounded border-1 ">UPLOAD YOUR CV</button>
+              </div>
+
+
+
+            </div>
+
+
+          </div>
+
         </section>
       </main>
     </>

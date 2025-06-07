@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
-main{
-     overflow-x:hidden ;
-   
-  
+main {
+    overflow-x: hidden;
+
+
 }
 
 
-nav
-{
+nav {
     z-index: 100;
- overflow-x:hidden ;
+    overflow-x: hidden;
 }
