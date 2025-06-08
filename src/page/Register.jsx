@@ -9,7 +9,7 @@ const Register = () => {
 
         <div className="h-[878.2px] w-[1200px] flex justify-end items-center">
           <div className=" h-[878.2px] w-[800px] rounded-2xl bg-gray-300 opacity-80 ">
-            <div className="h-[120px] w-[800px] flex  bg-blue-400 text-6xl justify-center items-center text-purple-600 font-bold ">
+            <div className="h-[120px] w-[800px] flex  bg-blue-400 text-6xl justify-center items-center text-white font-bold ">
               {" "}
               <h1>Register</h1>
             </div>

@@ -25,7 +25,7 @@ const Hero = () => {
               <input
                 type="text"
                 placeholder="Job Tittle or keyword"
-                className="bg-gray-50 p-4 h-20 w-[360px] "
+                className="bg-gray-50 p-4 h-20 w-[360px] outline-none "
               />
 
               <select name="" id="" className="bg-gray-50 h-20 w-[360px] ">
@@ -33,7 +33,7 @@ const Hero = () => {
                 <option value="">Location Pk</option>
                 <option value="">Location Us</option>
               </select>
-              <button className="bg-pink-600 h-20 w-[190px] text-white ">
+              <button className="bg-pink-600 h-20 w-[190px] text-white hover:bg-lime-600 cursor-pointer ">
                 Find Job
               </button>
             </div>
@@ -85,7 +85,7 @@ const Hero = () => {
                   <span className="text-2xl text-pink-600">(658)</span>
                 </div>
               </div>
-            </div>
+            </div>                                                                                                                                                                                                                                  
             <br />
             <br />
             <div className="flex  justify-center gap-10">
@@ -127,7 +127,7 @@ const Hero = () => {
 
           <div className=" relative flex justify-center items-center bottom-[200px] ">
 
-            <button className="border-1 py-[25px] px-[80px] rounded-2xl border-blue-500 text-blue-500 text-2xl "> Browse All Sectors </button>
+            <button className="border-1 py-[25px] px-[80px] rounded-2xl border-blue-500 text-blue-500 text-2xl cursor-pointer hover:bg-blue-500 hover:text-white "> Browse All Sectors </button>
           </div>
         </section>
 

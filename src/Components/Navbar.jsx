@@ -21,12 +21,12 @@ const navigate = useNavigate();
         </div>
         <div className="  flex gap-3 items-center  relative right-25">
           <div>
-            <button className=" bg-pink-600 py-5 px-15 text-white" onClick={() => navigate("/register") }>
+            <button className=" bg-pink-600 py-5 px-15 text-white cursor-pointer" onClick={() => navigate("/register") }>
               Register
             </button>
           </div>
           <div>
-            <button className=" border-1 py-5 px-12 text-pink-700 hover:bg-pink-700 hover:text-white " onClick={() => navigate("/login") }>
+            <button className=" border-1 py-5 px-12 text-pink-700 hover:bg-pink-700 hover:text-white cursor-pointer " onClick={() => navigate("/login") }>
               Login
             </button>
           </div>
