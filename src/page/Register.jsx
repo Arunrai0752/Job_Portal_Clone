@@ -3,107 +3,81 @@ import { NavLink } from "react-router-dom";
 
 const Register = () => {
   return (
-    <>
-      <div className="overflow-hidden bg-[url(Registerpage.jpg)] h-[878.2px]  bg-cover bg-center flex">
-        <div className="h-[878.2px] w-[800px]"></div>
-
-        <div className="h-[878.2px] w-[1200px] flex justify-end items-center">
-          <div className=" h-[878.2px] w-[800px] rounded-2xl bg-gray-300 opacity-80 ">
-            <div className="h-[120px] w-[800px] flex  bg-blue-400 text-6xl justify-center items-center text-white font-bold ">
-              {" "}
-              <h1>Register</h1>
+    <div className="min-h-screen flex items-center justify-center bg-[url(Registerpage.jpg)] bg-cover bg-center">
+      <div className="bg-white/90 rounded-2xl shadow-lg max-w-xl w-full p-10">
+        <h1 className="text-4xl font-bold text-center text-blue-600 mb-8">Register</h1>
+        <form className="space-y-6">
+          <div className="flex gap-4">
+            <div className="flex-1">
+              <label className="block text-lg font-medium mb-1" htmlFor="firstName">First Name</label>
+              <input
+                id="firstName"
+                type="text"
+                placeholder="First Name"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
             </div>
-
-            <div>
-              <div className="h-[140px] ">
-                <div className="text-center text-4xl flex justify-center items-center pt-5">
-                  <p>Name</p>
-                </div>
-
-                <div className="text-center text-2xl flex py-5 ">
-                  <input
-                    type="Name"
-                    placeholder="First Name"
-                    className="bg-white h-[60px] w-[205px] ps-2 text-center outline-none"
-                  />
-                  <span className="bg-white text-gray-400 p-2 text-4xl  w-[205px]">
-                    |
-                  </span>
-                  <input
-                    type="Name"
-                    placeholder="Middle Name"
-                    className="bg-white text-center outline-none"
-                  />
-                  <span className="bg-white text-gray-400 p-2 text-4xl  w-[205px]">
-                    |
-                  </span>
-                  <input
-                    type="Name"
-                    placeholder="Last Name"
-                    className="bg-white text-centerd outline-none"
-                  />
-                </div>
-              </div>
-
-              <div className="h-[140px] ">
-                <div className="text-center text-4xl flex justify-center items-center pt-5 ">
-                  <p>Email</p>
-                </div>
-
-                <div className="text-center text-2xl flex py-5 ">
-                  <input
-                    type="email"
-                    placeholder="Enter Your Email"
-                    className="bg-white h-[60px] w-full ps-2 text-center outline-none"
-                  />
-                </div>
-              </div>
-
-              <div className="h-[140px] ">
-                <div className="text-center text-4xl flex justify-center items-center pt-5">
-                  <p>Create Password</p>
-                </div>
-
-                <div className="text-center text-2xl flex py-5 ">
-                  <input
-                    type="password"
-                    placeholder="Use Strong Password"
-                    className="bg-white h-[60px] w-full text-center ps-2 outline-none"
-                  />
-                </div>
-              </div>
-
-              <div className="h-[140px] ">
-                <div className="text-center text-4xl flex justify-center items-center pt-5">
-                  <p>Confirm Password</p>
-                </div>
-
-                <div className="text-center text-2xl flex py-5 ">
-                  <input
-                    type="password"
-                    placeholder=" Confirm Password"
-                    className="bg-white h-[60px] w-full text-center ps-2 outline-none"
-                  />
-                </div>
-              </div>
+            <div className="flex-1">
+              <label className="block text-lg font-medium mb-1" htmlFor="middleName">Middle Name</label>
+              <input
+                id="middleName"
+                type="text"
+                placeholder="Middle Name"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
             </div>
-
-            <div className="flex justify-center items-center h-[150px] w-full">
-              <button className="h-[80px] text-5xl font-bold bg-pink-700 px-12 rounded-2xl hover:bg-blue-400">
-                SignUp
-              </button>
-            </div>
-
-            <div className="text-2xl flex justify-center gap-3 items-center">
-              <span> Already have an Account </span>
-              <NavLink to={"/login"} className="font-bold">
-                Login Now
-              </NavLink>
+            <div className="flex-1">
+              <label className="block text-lg font-medium mb-1" htmlFor="lastName">Last Name</label>
+              <input
+                id="lastName"
+                type="text"
+                placeholder="Last Name"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
             </div>
           </div>
+          <div>
+            <label className="block text-lg font-medium mb-1" htmlFor="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter Your Email"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+          <div>
+            <label className="block text-lg font-medium mb-1" htmlFor="password">Create Password</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Use Strong Password"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+          <div>
+            <label className="block text-lg font-medium mb-1" htmlFor="confirmPassword">Confirm Password</label>
+            <input
+              id="confirmPassword"
+              type="password"
+              placeholder="Confirm Password"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+          <button
+            type="submit"
+            className="w-full py-3 text-xl font-bold bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+          >
+            Sign Up
+          </button>
+        </form>
+        <div className="text-center mt-6 text-lg">
+          <span>Already have an account? </span>
+          <NavLink to="/login" className="text-blue-600 font-semibold hover:underline">
+            Login Now
+          </NavLink>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

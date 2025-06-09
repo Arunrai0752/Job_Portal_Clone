@@ -3,64 +3,115 @@ import { NavLink } from "react-router-dom";
 
 const Login = () => {
   return (
-    <>
-      <div class="login bg-[url(login.jpg)] bg-no-repeat  bg-cover bg-center h-[878.2px] w-screen  bg-gradient-to-r from-indigo-500/80 to-yellow-300/70   shadow-lg flex justify-center items-center ">
-        <div className=" h-[650px] w-[650px] bg-gray-400  opacity-90 rounded-2xl ">
-          <div className="h-[120px] text-center text-5xl bg-blue-600 font-bold p-[20px] text-white mb-[12px] pt rounded-1xl  ">
-            <h1 className=" ">Log In</h1>
-          </div>
-
-          <div className="relative top-[60px]   items-center ">
-            <div className=" h-[80px] relative p-5  flex  justify-around items-center  text-black rounded-b-2xl ">
-              <span className=" text-[25px] float-start ">Username : </span>
+    <div
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 via-indigo-400 to-yellow-200 bg-cover bg-center"
+      style={{ backgroundImage: "url(/login.jpg)" }}
+    >
+      <div className="backdrop-blur-md bg-white/70 shadow-2xl rounded-3xl p-10 w-full max-w-md flex flex-col items-center">
+        <h1 className="text-4xl font-extrabold text-blue-700 mb-8 tracking-wide">
+          Log In
+        </h1>
+        <form className="w-full flex flex-col gap-6">
+          <div className="flex flex-col gap-2">
+            <label
+              htmlFor="email"
+              className="text-lg font-medium text-gray-700"
+            >
+              Email or Username
+            </label>
+            <div className="relative">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+                <svg
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
+                  <path d="M12 14c-4.418 0-8 1.79-8 4v2h16v-2c0-2.21-3.582-4-8-4Z" />
+                </svg>
+              </span>
               <input
                 type="email"
                 id="email"
-                className="bg-white w-[400px] h-[60px] p-5 rounded-2xl text-2xl float-end outline-none"
-                placeholder="Enter Your Email/Username"
+                className="pl-12 pr-4 py-3 w-full rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-lg outline-none bg-white"
+                placeholder="Enter your email or username"
+                autoComplete="username"
               />
             </div>
-
-            <div className=" h-[80px] relative p-5 w-550px flex  justify-around items-center  text-black rounded-b-2xl  ">
-              <span className=" text-[25px] float-start ">Password : </span>
+          </div>
+          <div className="flex flex-col gap-2">
+            <label
+              htmlFor="password"
+              className="text-lg font-medium text-gray-700"
+            >
+              Password
+            </label>
+            <div className="relative">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+                <svg
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect
+                    width="18"
+                    height="12"
+                    x="3"
+                    y="8"
+                    rx="2"
+                  />
+                  <path d="M7 8V6a5 5 0 0 1 10 0v2" />
+                </svg>
+              </span>
               <input
                 type="password"
-                id="name"
-                className="bg-white w-[400px] h-[60px] p-5 rounded-2xl text-2xl  float-end outline-none"
-                placeholder="Enter Your Password"
+                id="password"
+                className="pl-12 pr-4 py-3 w-full rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-lg outline-none bg-white"
+                placeholder="Enter your password"
+                autoComplete="current-password"
               />
             </div>
           </div>
-
-          <div className="flex  text-2xl  justify-around items-center relative top-[80px]">
-            <div>
+          <div className="flex items-center justify-between text-sm mt-2">
+            <label className="flex items-center gap-2 cursor-pointer">
               <input
                 type="checkbox"
-                name="Remember"
-                className="m-2 mt-3  h-5 w-5"
+                name="remember"
+                className="accent-blue-600 h-4 w-4"
               />
-              <span>Remember Us</span>
-            </div>
-            <div>
-              <NavLink>Forgot Password ?</NavLink>
-            </div>
-          </div>
-
-          <div className="flex justify-center items-center relative top-[120px]">
-            <button  className=" w-[290px] h-[60px] rounded text-2xl bg-amber-500 cursor-pointer hover:bg-amber-400 hover:h-[58px] hover:w-[280px ]">
-              LogIn
-            </button>
-          </div>
-
-          <div className="text-2xl flex justify-center items-center relative gap-3 top-[150px]">
-            <span> Don't have an Account </span> 
-            <NavLink to={"/register"} className="font-bold">
-              SignUp Now
+              <span className="text-gray-600">Remember me</span>
+            </label>
+            <NavLink
+              to="#"
+              className="text-blue-600 hover:underline"
+            >
+              Forgot Password?
             </NavLink>
           </div>
+          <button
+            type="submit"
+            className="mt-4 w-full py-3 rounded-xl bg-blue-600 text-white text-xl font-semibold shadow hover:bg-blue-700 transition"
+          >
+            Log In
+          </button>
+        </form>
+        <div className="mt-8 text-center text-gray-700 text-lg">
+          Don't have an account?{" "}
+          <NavLink
+            to="/register"
+            className="text-blue-700 font-bold hover:underline"
+          >
+            Sign Up Now
+          </NavLink>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
