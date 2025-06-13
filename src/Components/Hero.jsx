@@ -8,7 +8,7 @@ import { FaMicrochip } from "react-icons/fa";
 import { FaBuilding } from "react-icons/fa";
 import { FaPenNib } from "react-icons/fa";
 
-const Hero = () => {
+const Hero = () => { 
   return (
     <>
       <main>
@@ -123,45 +123,54 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
-
           <div className=" relative flex justify-center items-center bottom-[200px] ">
-
             <button className="border-1 py-[25px] px-[80px] rounded-2xl border-blue-500 text-blue-500 text-2xl cursor-pointer hover:bg-blue-500 hover:text-white "> Browse All Sectors </button>
           </div>
         </section>
-
-
-
-
         <section>
-
-
           <div className=" bg-[url('cv_bg.jpg')] bg-no-repeat object-fill bg-cover bg-center w-full h-[500px] mb-[500px]">
-
-            <div className=" bg-blue-800 bject-fill opacity-70 bg-center w-full h-[500px] mb-[500px] grid  text-white flex justify-content-center  items-center text-center ">
-
-
+            <div className=" bg-blue-800 bject-fill opacity-70 bg-center w-full h-[500px]  grid  text-white flex justify-content-center  items-center text-center ">
               <div>
-                
                               <span className="text-1xl">FEATURED TOURS PACKAGES</span>
                               <br /> <br />
                               <h1 className="text-5xl font-bold"> Make a Difference with Your <br /> Online Resume! </h1>
                               <br /> <br /> <br />
                               <button className=" py-4 px-15  rounded border-1 ">UPLOAD YOUR CV</button>
               </div>
-
-
-
             </div>
-
-
           </div>
-
+        </section>
+        <section>
+                <div className=" grid h-[200px] w-full text-center items-center ">
+                      <p className="text-2xl">Recent Job</p>
+                      <h1 className="text-7xl">Featured Jobs</h1>
+                </div>
+        </section>
+        <section>
+            <div className="h-[1000px] w-full bg-indigo-950 my-5  grid  justify-center items-center ">
+              <div className="  h-[200px] w-[1100px] bg-sky-500 flex items-center gap-[150px] ">
+                <div className="flex items-center h-[200px] w-[800px] bg-emerald-200">
+                      <div className="bg-[url('d-m-1.png')] h-[120px] w-[120px] bg-amber-400 float-start ms-5  bg-no-repeat object-fill bg-cover "></div>
+                      <div className="grid px-5"> 
+                        <div className="text-3xl">Digital Marketer</div>
+                        <div className="flex justify-between w-[550px] text-[20px] py-2 text-gray-600">
+                          <div>Creative Agency</div>
+                          <div> Athens, Greece</div>
+                          <div> $3500 - $4000</div>
+                        </div>
+                      </div>
+                </div>
+                <div className="h-[200px] w-[300px] items-center fle ">
+                  <div className="text-2xl grid items-center">
+                    <button className="px-[10px] w-[180px] py-[12px] border-1 rounded-4xl">Full time</button>
+                    <p>7 hours ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </section>
       </main>
     </>
   );
 };
-
 export default Hero;
