@@ -1,10 +1,13 @@
-import e from 'express';
-import { userRegister , userLogin , userLogout}
-from "../controllers/userController.js"
+import express from "express";
+import {
+  userLogin,
+  userRegister,
+  userLogout,
+} from "../controllers/userController.js";
 
-const router = e.Router();
+const router = express.Router();
 
-router.post("/register" , userRegister);
+router.post("/register", userRegister);
 router.post("/login", userLogin);
 router.get("/logout", userLogout);
 
