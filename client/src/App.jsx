@@ -1,29 +1,29 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
+import Navbar from "./components/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./page/About";
-import Jobs from "./page/Jobs";
-import Contact from "./page/Contact";
-import Home from "./page/Home";
-import Register from "./page/Register";
-import Login from "./page/Login";
-import Pages from "./page/Pages";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Jobs from "./pages/Jobs";
+import Contact from "./pages/Contact";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import { Toaster } from "react-hot-toast";
+import UserDashboard from "./pages/UserDashboard";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+        <Toaster />
         <Navbar />
-
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact/>}/>
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} /> 
-          <Route path="/jobs" element={<Jobs/>}/>
           <Route path="/about" element={<About />} />
-          <Route path="/pages" element={<Pages />} />
+          <Route path="/jobs" element={<Jobs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/userDashboard" element={<UserDashboard />} />
         </Routes>
       </BrowserRouter>
     </>
